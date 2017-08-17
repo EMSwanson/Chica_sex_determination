@@ -1,0 +1,7 @@
+#PBS -l nodes=1:ppn=1,mem=30gb,walltime=4:00:00
+#PBS -m abe
+
+cd /panfs/roc/scratch/swan0824/Chica_indexed_bams
+
+sed 's/	/,/g' depth_Chica1_1.dep > Aggfile_Chica1_1.csv
+

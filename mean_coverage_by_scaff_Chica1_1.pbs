@@ -1,0 +1,8 @@
+#PBS -l nodes=1:ppn=1,mem=90gb,walltime=4:00:00
+#PBS -m abe
+
+cd /panfs/roc/scratch/swan0824/Chica_indexed_bams
+
+module load python3
+
+python calc_coverage_Chica1_1.py
